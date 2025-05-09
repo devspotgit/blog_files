@@ -3,7 +3,7 @@
 {
     "posts": [   
         {
-            "title":"SQL vs NoSQL : Which One Should You Use ?",
+            "title":"SQL vs NoSQL",
             "slug":"sql-vs-nosql",
             "content":"sql_vs_nosql.html",
             "date":"03-10-2025",
@@ -11,7 +11,7 @@
             "preview":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum libero in turpis euismod dictum."
         },
         {
-            "title":"Understanding Promises vs Async/Await in JavaScript",
+            "title":"Promises vs Async/Await",
             "slug":"promises-vs-async-await",
             "content":"promises_vs_async_await.html",
             "date":"03-27-2025",
@@ -19,7 +19,7 @@
             "preview":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum libero in turpis euismod dictum."
         },
         {
-            "title":"Using Prisma ORM in Node.js Projects",
+            "title":"Prisma ORM",
             "slug":"prisma-nodejs",
             "content":"prisma_nodejs.html",
             "date":"04-10-2025",
@@ -27,7 +27,7 @@
             "preview":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum libero in turpis euismod dictum."
         },
         {
-            "title":"What is OAuth ?",
+            "title":"OAuth",
             "slug":"oauth",
             "content":"oauth.html",
             "date":"02-14-2025",
@@ -35,7 +35,7 @@
             "preview":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum libero in turpis euismod dictum."
         },
         {
-            "title":"How to Build a Responsive Navbar with CSS Flexbox",
+            "title":"Responsive Navbar",
             "slug":"css-flexbox-navbar",
             "content":"css_flexbox_navbar.html",
             "date":"01-04-2025",
@@ -43,7 +43,7 @@
             "preview":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum libero in turpis euismod dictum."
         },
         {
-            "title":"SSR vs CSR : What’s Better for Performance ?",
+            "title":"SSR vs CSR",
             "slug":"ssr-vs-csr",
             "content":"ssr_vs_csr.html",
             "date":"04-25-2025",

@@ -7,7 +7,10 @@ import { months } from "./api.js"
 
 function categoryHeader(title){
     return `
-        <div class="category-header">${title}</div>
+        <div class="category-header">
+            <button class="side-open"><i class="fa-solid fa-bars"></i></button>
+            <span class="category-title">${title}</span>
+        </div>
     `
 }
 
@@ -15,6 +18,7 @@ function categoryHeader(title){
 function postHeader(title, date){
     return `
         <div class="post-header">
+            <button class="side-open"><i class="fa-solid fa-bars"></i></button>
             <span class="post-title">${title}</span>
             <span class="post-date">
                 ${months[parseInt(date.split("-")[0])-1]+" "+date.split("-")[1]+", "+date.split("-")[2]}
@@ -62,10 +66,13 @@ function postContent(content){
 function side(categories){
     return `
         <div class="side">
-            <a href="/">Desvspot</a>
+            <div class="side-top">
+                <button class="side-close"><i class="fa-solid fa-xmark"></i></button>
+                <a class="site-name" href="/">Desvspot</a>
+            </div>
             <div class="categories">
                 ${categories.map(item => `
-                    <a href="/categories/${item.slug}">${item.title}</a>
+                    <a href="/categories/${item.slug}" class="category">${item.title}</a>
                 `).join(" ")}
             </div>
         </div>
@@ -96,7 +103,9 @@ function postPage(post, content, categories){
                 ${postHeader(post.title, post.date)}
                 ${postContent(content)}
                 ${footer()}
+                <div class="transparent"></div>
             </div>
+            <script src="/static/js/main.js"></script>
         </body>
         </html>
     `
@@ -120,7 +129,9 @@ function categoryPage(category, categories, posts){
                 ${categoryHeader(category.title)}
                 ${postList(posts)}
                 ${footer()}
+                <div class="transparent"></div>
             </div>
+            <script src="/static/js/main.js"></script>
         </body>
         </html>
     `
@@ -145,7 +156,9 @@ function homePage(categories, posts){
                 ${categoryHeader("All Posts")}
                 ${postList(posts)}
                 ${footer()}
+                <div class="transparent"></div>
             </div>
+            <script src="/static/js/main.js"></script>
         </body>
         </html>
     `
