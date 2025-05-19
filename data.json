@@ -48,8 +48,7 @@
             "content":"ssr_vs_csr.html",
             "date":"04-25-2025",
             "category":"web-dev",
-            "preview":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum libero in turpis euismod dictum."
-
+            "preview":"In web Development, rendering is the process of produicing the final page that will be displayed on the browser. CSR is meant for Client Side Rendering"
         }
     ],
 

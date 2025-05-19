@@ -1,0 +1,118 @@
+
+
+
+<p>
+    In web Development, rendering is the process of produicing the final page that will be displayed on the browser. 
+    <b>CSR</b> is meant for <b>Client Side Rendering</b>, 
+    as you can guess, with this approach the page is constructed from the client (browser) before it's displayed, 
+    the second approach is <b>SSR</b> for <b>Server Side rendering</b> unlike the first one, the page is build on the server before sent to the client.
+</p>
+
+
+<p>
+    In this tutorial, we will go over both rendering methods, understand their limitation, when and how to implement them.
+</p>
+
+
+<h1>CSR - Client Side Rendering</h1>
+
+<p>
+    In the case of a Client Side Rendering, the server response to a request is usually an empty html page,
+    then the brower will download all the dependancies required to piece the page together, these are usually 
+    javascript files and other static files indicated in the initial page receive, when the page is ready, the app
+    can update the DOM to display the final result.   
+</p>
+
+<p>
+    Technically, this type of rendering doesn't rely on server for any process, but still need the server
+    to send the initial page which is the start point for building the final page, so in term of server complexity,
+    Client Side Rendering has little, a simple static web server often is plenty enough.
+</p>
+
+<p>
+    Client Side Rendering may not require much from the server, but it does have some drawbacks.
+</p>
+
+<p>
+    Given its complexity, the app may require the browser to download an important number of dependencies which can considerably slow the process, 
+    since any additional request to the server is required to navigate the app, we can expect the loading time to decrease for the subsequent requests. 
+</p>
+
+<p>
+    Because the initial page is empty or lacking, it can be difficult for the search engine
+    to extract the information it needs to index the page properly. 
+</p>
+
+<p>
+    Client Side Rendering approach is meant for app that doesn't require much SEO, and rely most on user interactivity.
+</p>
+
+
+<h1>SSR - Server Side Rendering</h1>
+
+<p>
+    As opposed to the Client Side Rendering, the server deliver a fully rendered page, the page may still need to go to an hydration phase to attach events to DOM elements,
+    but often this is not affecting the inital loading time which is shorter than CSR, but can create a delay in the page interactivity.
+</p>
+
+<p>
+    Another positive aspect of SSR is that, it's usually SEO friendly and may not require additional tool to improve SEO.
+</p>
+
+<p>
+    Given that the page is put together before getting shipped out and each request always initiated from the server, this type of rendering  may require more complexity and knowlege of backend development
+</p>
+
+<p>
+    Server Side Rendering is used when the site required a good SEO, and the need to release some burden from the client.
+</p>
+
+
+<h1>SSR and CSR Comparison</h1>
+
+<table>
+    <tr>
+        <th>Features</th>
+        <th>Client Side Rendering</th>
+        <th>Server Side Rendering</th>
+    </tr>
+    <tr>
+        <td><b>Initial Loading Time</b></td>
+        <td>Slower</td>
+        <td>Faster</td>
+    </tr>
+    <tr>
+        <td><b>SEO</b></td>
+        <td>Poor SEO, may require additional tool for optimization</td>
+        <td>Good SEO</td>
+    </tr>
+    <tr>
+        <td><b>Server Load</b></td>
+        <td>Lighter</td>
+        <td>Heavier</td>
+    </tr>
+    <tr>
+        <td><b>Interactivity</b></td>
+        <td>Very fast after initial load</td>
+        <td>Needs hydration in order for JS to take over</td>
+    </tr>
+</table>
+
+<p>
+    In term of implementation, <b>CSR</b> will often rely on libraries and framework as <b>React</b>, <b>Vue</b> or 
+    <b>Angular</b>, it's also possible to build a single page app using plain javascript, but the use of those mordern tools
+    make the development process easier. <b>SSR</b> in other hand, can be implemented with <b>Express</b> or any other server side framework, in case the app require 
+    some interactivity, <b>Next</b>, <b>Nuxt</b> are a better choice.
+</p>
+
+
+
+
+
+
+
+
+
+
+
+

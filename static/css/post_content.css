@@ -1,4 +1,68 @@
 
 
+.post-content{
+
+    & h1{
+        font-size:var(--fs-b);
+        margin-bottom:var(--sp-m);
+        /* color:var(--rose-quartz); */
+    }
+    
+    & h2{
+        font-size:var(--fs-m);
+        margin-bottom:var(--sp-m);
+        /* color:var(--rose-quartz); */
+    }
+    
+    
+    
+    & ul{
+    
+    
+    }
+    
+    
+    & ol{
+    
+    
+    }
+    
+    & img{
+    
+    
+    }
+
+    & p{
+        margin-bottom:var(--sp-m);
+        text-align:justify;
+    }
+
+    & th, td{
+        text-align:start;
+        vertical-align: text-top;       
+    }
+
+    & tr:nth-child(even) > *:not(:last-child){
+        border-right:1px solid var(--ash-gray);
+    } 
+
+    & tr:nth-child(odd) > *:not(:last-child){
+        border-right:1px solid var(--platinum);
+    } 
+
+    & tr:nth-child(even){
+        background-color:var(--platinum);
+    }
+
+    & tr:nth-child(odd){
+        background-color:var(--ash-gray);
+    }
+
+    & table{
+        border-collapse: collapse;
+        margin-bottom:var(--sp-m);
+    }
 
 
+
+}
