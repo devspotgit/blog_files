@@ -27,15 +27,15 @@
             "preview":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum libero in turpis euismod dictum."
         },
         {
-            "title":"OAuth",
+            "title":"What is OAuth",
             "slug":"oauth",
             "content":"oauth.html",
             "date":"02-14-2025",
             "category":"security",
-            "preview":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elementum libero in turpis euismod dictum."
+            "preview":"OAuth (Open Authorization) is an open standard for access delegation."
         },
         {
-            "title":"Responsive Navbar",
+            "title":"Css Responsive Navbar",
             "slug":"css-flexbox-navbar",
             "content":"css_flexbox_navbar.html",
             "date":"01-04-2025",

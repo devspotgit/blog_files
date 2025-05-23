@@ -13,18 +13,28 @@
         margin-bottom:var(--sp-m);
         /* color:var(--rose-quartz); */
     }
-    
-    
-    
+
+
+    & li{
+        list-style-position:inside; 
+        text-align:justify;
+    }
+
+
+    & li:not(:last-child){
+        margin-bottom:var(--sp-s);
+    }
+
     & ul{
-    
+        margin-bottom:var(--sp-m);
+        /* margin-left:var(--sp-s); */
     
     }
     
     
     & ol{
-    
-    
+        margin-bottom:var(--sp-m);
+        /* margin-left:var(--sp-s); */
     }
     
     & img{
